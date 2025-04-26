@@ -1,26 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
-    const tableBody = document.querySelector('tbody');
-    const featuredContainer = document.querySelector('.row.g-4');
-    let testimonialCount = tableBody.rows.length;
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const name = form.querySelector('input[type="text"]').value.trim();
-      const email = form.querySelector('input[type="email"]').value.trim();
-      const ratingValue = form.querySelector('select').value;
-      const message = form.querySelector('textarea').value.trim();
-  
-      if (!name || !ratingValue || !message) return;
-  
-      const starsHTML = getStarsHTML(parseInt(ratingValue));
-      const date = new Date().toLocaleDateString('id-ID');
-  
-      // Tambah ke tabel
-      testimonialCount++;
-      const newRow = document.createElement('tr');
-      newRow.innerHTML = `
+  const form = document.querySelector('form');
+  const tableBody = document.querySelector('tbody');
+  const featuredContainer = document.querySelector('.row.g-4');
+  let testimonialCount = tableBody.rows.length;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = form.querySelector('input[type="text"]').value.trim();
+    const email = form.querySelector('input[type="email"]').value.trim();
+    const ratingValue = form.querySelector('select').value;
+    const message = form.querySelector('textarea').value.trim();
+
+    if (!name || !ratingValue || !message) return;
+
+    const starsHTML = getStarsHTML(parseInt(ratingValue));
+    const date = new Date().toLocaleDateString('id-ID');
+
+    // Tambah ke tabel
+    testimonialCount++;
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `
         <td>${testimonialCount}</td>
         <td>${name}</td>
         <td><span class="text-warning">${starsHTML}</span></td>
@@ -33,12 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </td>
       `;
-      tableBody.appendChild(newRow);
-  
-      // Tambah ke Featured Testimonial
-      const newCard = document.createElement('div');
-      newCard.className = 'col-md-4';
-      newCard.innerHTML = `
+    tableBody.appendChild(newRow);
+
+    // Tambah ke Featured Testimonial
+    const newCard = document.createElement('div');
+    newCard.className = 'col-md-4';
+    newCard.innerHTML = `
         <div class="testimonial-card p-4 h-100 bg-white">
           <div class="rating mb-3">${starsHTML}</div>
           <p class="mb-4">"${message}"</p>
@@ -49,21 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
       `;
-      featuredContainer.insertBefore(newCard, featuredContainer.firstChild);
-  
-      form.reset();
-    });
-  
-    function getStarsHTML(rating) {
-      let html = '';
-      for (let i = 1; i <= 5; i++) {
-        if (i <= rating) {
-          html += '<i class="fas fa-star"></i>';
-        } else {
-          html += '<i class="far fa-star"></i>';
-        }
-      }
-      return html;
-    }
+    featuredContainer.insertBefore(newCard, featuredContainer.firstChild);
+
+    form.reset();
   });
-  
+
+  function getStarsHTML(rating) {
+    let html = '';
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rating) {
+        html += '<i class="fas fa-star"></i>';
+      } else {
+        html += '<i class="far fa-star"></i>';
+      }
+    }
+    return html;
+  }
+});
