@@ -1,0 +1,350 @@
+/* assets/css/style.css */
+body {
+  font-family: "Arial", "sans-serif";
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #2a2a2a !important;
+}
+
+.nav-link {
+  color: #2a2a2a !important;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/gambar/gantunganbaju3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Button */
+.btn-custom {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* Product Card */
+.product-card {
+  transition: transform 0.3s;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Section Padding */
+.section-padding {
+  padding: 100px 0;
+}
+
+/* category */
+.category-card {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.category-card:hover .category-overlay {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #2a2a2a;
+}
+
+footer h5 {
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+
+footer a {
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: #ccc !important;
+  padding-left: 5px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Custom About Page Styles */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/gambar/gantunganbaju.jpg") center/cover;
+  height: 60vh;
+}
+
+.value-card:hover {
+  background-color: #ebeef2;
+}
+
+/* Custom Contact Page Styles */
+.contact-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/gambar/suit.jpg") center/cover;
+  height: 60vh;
+}
+
+.contact-card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.form-control:focus {
+  border-color: #2a2a2a;
+  box-shadow: 0 0 0 0.25rem rgba(42, 42, 42, 0.25);
+}
+
+/* Product Page Custom Styles */
+.product-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/gambar/gantunganbaju2.jpg") center/cover;
+  height: 60vh;
+}
+
+/* card */
+.product-card img {
+  object-fit: cover;
+  height: 220px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Judul produk */
+.product-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Harga */
+.product-card p {
+  font-size: 0.9rem;
+}
+
+/* Tombol detail */
+.product-card .btn-outline-dark {
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.product-card .btn-outline-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* efek hover kartu */
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* filter */
+.filter .form-select {
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Tombol apply */
+.button .btn-dark {
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: #2a2a2a;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+  background-color: #2a2a2a;
+  color: #ebeef2;
+}
+
+.pagination .active .page-link {
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
+  color: #ebeef2;
+}
+
+/* Testimonial Page Custom Styles */
+.testimonial-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/gambar/kain2.jpg") center/cover;
+  height: 60vh;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  border-left: 3px solid #2a2a2a;
+  transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Rating Stars */
+.rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+/* Responsive Table */
+.table-responsive {
+  max-height: 500px;
+}
+
+/* Testimonial Form Section */
+.form-select:focus {
+  border-color: #2a2a2a;
+  box-shadow: 0 0 0 0.25rem rgba(42, 42, 42, 0.25);
+}
+
+
+/* Clean Outfit Gallery Styles */
+.clean-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("/gambar/kain4.jpg") center/cover;
+  height: 60vh;
+  background-color: var(--clean-light);
+}
+
+
+/* Card Outfit (Lookbook) */
+.clean-look-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--clean-border);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.clean-look-card img {
+  height: 500px;
+  object-fit: cover;
+  filter: grayscale(10%); /* efek abu-abu ringan */
+  transition: all 0.5s ease;
+}
+
+.clean-look-card:hover {
+  transform: translateY(-5px); /* hover naik sedikit */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* bayangan halus */
+}
+
+.clean-look-card:hover img {
+  filter: grayscale(0%); /* hilangkan efek grayscale saat hover */
+}
+
+/* Detail Outfit Card */
+.clean-look-details {
+  padding: 20px;
+  border-top: 1px solid var(--clean-border);
+}
+
+.outfit-meta {
+  font-size: 0.85rem;
+  color: #777;
+  letter-spacing: 1px; /* spasi huruf tipis */
+}
+
+.outfit-tag {
+  display: inline-block;
+  border: 1px solid var(--clean-border);
+  padding: 3px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* Minimalist Principles */
+section.bg-light .p-4 {
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+
+section.bg-light .p-4:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* animasi hover kartu prinsip */
+}
