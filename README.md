@@ -1,5 +1,5 @@
 <p>
-  Elevate adalah web clothing brand dengan mengangkat tema vintage, elegan, dan classy. Web ini saya buat untuk memenuhi tugas/projek UTS pada matkul Pemweb. Web ini dibangun menggunakan bahasa html, css, dan bootstrap. Proses pengembangan aplikasi ini dilakukan dalam waktu sekitar dua minggu, dengan pendekatan secara bertahap dari brainstorming ide sampai pengeksekusian program. 
+  Elevate adalah web clothing brand dengan mengangkat tema vintage, elegan, dan classy. Web ini saya buat untuk memenuhi tugas/projek UTS pada matkul Pemweb. Web ini dibangun menggunakan bahasa html, css, dan bootstrap. Proses pengembangan website ini dilakukan dalam waktu sekitar dua minggu, dengan pendekatan secara bertahap dari brainstorming ide sampai pengeksekusian program. 
 </p><br>Pada web ini ada 6 page yaitu:
 <ul>
   <li>Index(homepage)</li>
